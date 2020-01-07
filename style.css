@@ -1,0 +1,48 @@
+.main,.header {
+    display:grid
+}
+.header {
+    margin: auto;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    font-family: sans-serif;
+    line-height: 24px;
+}
+.cards >div {
+    margin:15px;
+    padding: 10px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: minMax(420px,auto);
+    background: linear-gradient(to top,white,#eee);
+}
+body >div:nth-child(1){
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 200;
+    color: rgb(141, 141, 141);
+}
+h4 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    font-size: 13px;
+    font-weight: 250;
+    line-height: 25px;
+}
+
+.power {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+hr {
+    margin: 0;
+}
