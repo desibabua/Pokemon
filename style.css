@@ -33,7 +33,7 @@ body >div:nth-child(1){
 h1 {
     text-align: center;
     font-weight: 300;
-    color: rgb(130, 130, 130);
+    color: rgb(100, 100, 100);
     font-size: 24px;
 }
 h4 {
@@ -58,7 +58,7 @@ p {
     font-weight: 250;
     line-height: 25px;
     text-align: justify;
-    color:rgb(155, 153, 153)
+    color:black
 }
 
 
