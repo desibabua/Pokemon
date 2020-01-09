@@ -15,8 +15,8 @@
     border: 1px solid black;
     border-radius: 10px;
     width:250px;
-    height: 430px;
-    background: linear-gradient(to top,white,#eee);
+    height: 375px;
+    background: linear-gradient(to bottom left ,white,#eee,#ccc);
 }
 
 .cards >div:hover {
@@ -31,19 +31,21 @@ body >div:nth-child(1){
 }
 
 h1 {
+    margin: 8 25;
     text-align: center;
     font-weight: 300;
     color: rgb(100, 100, 100);
     font-size: 24px;
 }
+
 h4 {
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 0 5px 0;
     font-size: 13px;
     font-weight: 250;
     line-height: 25px;
 }
-.cardBack>div>h4 {
+.cardBack>h4 {
     text-align: center;
     margin: 10px 0;
     font-size: 15px;
@@ -64,17 +66,19 @@ p {
 
 .power {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-between;
+    margin: 10px;
 }
 
-hr {
-    margin: 0;
-}
 .pokeCard {
     width:250px;
-    height:430px;
+    height:375px;
     position: relative;
+}
+
+.pokeCard>div:nth-child(2){
+    width: 250px;
+    height: 300px
 }
 
 .cardFront:hover {
@@ -84,12 +88,24 @@ hr {
     opacity: 1;
 }
 .cardBack {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top,white,#eee);
+    position:relative;
+    background: linear-gradient(to bottom left ,white,#eee,#ccc);
     opacity: 0;
     border-radius: 10px;
+    overflow: scroll;
 }
 .cardFront, .cardBack{
-    position:absolute
+    width: 250px;
+    height: 300px
+}
+button {
+    margin-right: 10px;
+}
+.cardFront{
+    position: absolute;
+}
+
+.button {
+    justify-content: flex-end;
+    display:flex
 }
